@@ -2,9 +2,12 @@
 const express = require("express");
 const context = require("./repository/repository-wrapper")
 const app = express();
+const cors = require("cors")
 
 //Middle
 app.use(express.json());
+app.use(express.urlencoded({extended: true}));
+app.use(cors());
 
 
 //Endpoints
@@ -19,6 +22,13 @@ app.get("/api/songs/:id", (req, res) => {
     const id = req.params.id;
     const song = context.songs.findSongById(id);
     return res.send(song);
+});
+
+//POST = http://localhost:5005/api/songs/
+app.post("/api/songs", (req, res) => {
+    const newSong = req.body;
+    const addedSong = context.songs.createSong(newSong);
+    return res.send(addedSong);
 });
 
 //Starting a Server
