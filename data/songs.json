@@ -32,12 +32,12 @@
     "releaseDate": "12/03/1965"
   },
   {
-    "id": 5,
+    "id": "5",
     "title": "Think For Yourself",
     "album": "Rubber Soul",
     "artist": "The Beatles",
     "genre": "Folk Rock",
-    "releaseDate": "12/03/1965"
+    "releaseDate": "12/03/1985"
   },
   {
     "id": 6,
@@ -193,6 +193,14 @@
   },
   {
     "id": 25,
+    "title": "Drive My Car",
+    "album": "Rubber Soul",
+    "artist": "The Beatles",
+    "genre": "Folk Rock",
+    "releaseDate": "12/03/1965"
+  },
+  {
+    "id": 26,
     "title": "Drive My Car",
     "album": "Rubber Soul",
     "artist": "The Beatles",
